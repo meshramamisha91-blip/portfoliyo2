@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+<div id="particles-js"></div>
+<title>Amisha | Data Analyst</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* HERO SECTION */
+
+.hero-container{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:120px 10%;
+
+}
+
+.hero-text{
+
+max-width:600px;
+
+}
+
+.hero-text h1{
+
+font-size:55px;
+margin-bottom:15px;
+
+}
+
+.hero-text span{
+
+color:#00e0ff;
+
+}
+
+.hero-text p{
+
+font-size:18px;
+opacity:.85;
+line-height:28px;
+
+}
+
+.hero-buttons{
+
+margin-top:30px;
+
+}
+
+.hero-buttons a{
+
+margin-right:15px;
+
+padding:12px 25px;
+
+border-radius:30px;
+
+text-decoration:none;
+
+color:white;
+
+background:linear-gradient(45deg,#00e0ff,#22c55e);
+
+}
+
+.hero-image{
+
+background:rgba(255,255,255,0.08);
+
+padding:30px;
+
+border-radius:20px;
+
+backdrop-filter:blur(15px);
+
+border:1px solid rgba(255,255,255,0.2);
+
+}
+
+.hero-image img{
+
+width:260px;
+
+border-radius:50%;
+
+}
+
+/* HIGHLIGHT SECTION */
+
+.highlight{
+
+padding:80px 10%;
+
+}
+
+.highlight h2{
+
+margin-bottom:40px;
+
+}
+
+.highlight-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+
+gap:25px;
+
+}
+
+.highlight-card{
+
+background:rgba(255,255,255,0.07);
+
+padding:25px;
+
+border-radius:15px;
+
+text-align:center;
+
+border:1px solid rgba(255,255,255,0.15);
+
+transition:.3s;
+
+}
+
+.highlight-card:hover{
+
+transform:translateY(-8px);
+
+background:rgba(255,255,255,0.12);
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<h2>Amisha</h2>
+
+<div>
+
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="skills.html">Skills</a>
+<a href="projects.html">Projects</a>
+<a href="contact.html">Contact</a>
+
+</div>
+
+</nav>
+
+
+<!-- HERO SECTION -->
+
+<section class="hero-container">
+
+<div class="hero-text">
+
+<h1>Hello I'm <span id="typing"></span></h1>
+<p>
+
+Aspiring <b>Data Analyst</b> passionate about transforming raw data into meaningful insights.  
+Currently learning <b>Python, SQL, Excel and Power BI</b> and building real-world projects.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="projects.html">View Projects</a>
+
+<a href="contact.html">Contact Me</a>
+
+<a href="resume.pdf" download>Download Resume</a>
+
+</div>
+
+</div>
+
+
+<div class="hero-image">
+
+<img src="images/profile.jpg">
+
+</div>
+
+</section>
+<script>
+
+const text = "Amisha";
+let i = 0;
+
+function typing(){
+
+if(i < text.length){
+
+document.getElementById("typing").innerHTML += text.charAt(i);
+
+i++;
+
+setTimeout(typing,150);
+
+}
+
+}
+
+typing();
+
+</script>
+
+<!-- HIGHLIGHT SECTION -->
+
+<section class="highlight">
+
+<h2>What I Do</h2>
+
+<div class="highlight-grid">
+
+
+<div class="highlight-card">
+
+<h3>Data Analysis</h3>
+
+<p>Analyze datasets to discover trends and insights.</p>
+
+</div>
+
+
+<div class="highlight-card">
+
+<h3>Dashboard Creation</h3>
+
+<p>Create interactive dashboards using Power BI.</p>
+
+</div>
+
+
+<div class="highlight-card">
+
+<h3>Data Cleaning</h3>
+
+<p>Clean and prepare raw data for analysis.</p>
+
+</div>
+
+
+<div class="highlight-card">
+
+<h3>Visualization</h3>
+
+<p>Create charts and visual insights using Python.</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+</body>
+</html>
+<section class="highlight">
+
+<h2>My Projects</h2>
+
+<div class="highlight-grid">
+
+<div class="highlight-card">
+<h3>Sales Dashboard</h3>
+<p>Power BI dashboard for analyzing sales trends.</p>
+</div>
+
+<div class="highlight-card">
+<h3>Netflix Data Analysis</h3>
+<p>Python project analyzing Netflix dataset.</p>
+</div>
+
+<div class="highlight-card">
+<h3>Customer Segmentation</h3>
+<p>Python ML model for customer groups.</p>
+</div>
+
+</div>
+
+</section>
